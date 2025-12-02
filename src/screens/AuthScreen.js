@@ -188,11 +188,12 @@ const AuthScreen = ({navigation, route}) => {
 
             <TouchableOpacity
               style={styles.switchButton}
-              onPress={() =>
-                navigation.replace('Auth', {
+              onPress={() => {
+                console.log('Switch button pressed, current type:', type);
+                navigation.navigate('Auth', {
                   type: type === 'signup' ? 'login' : 'signup',
-                })
-              }>
+                });
+              }}>
               <Text style={styles.switchButtonText}>
                 {type === 'signup'
                   ? 'Already have an account? Sign In'

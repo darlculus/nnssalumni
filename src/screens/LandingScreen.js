@@ -191,7 +191,7 @@ const LandingScreen = ({navigation}) => {
           colors={['rgba(30,60,114,0.4)', 'rgba(42,82,152,0.8)', 'rgba(0,0,0,0.9)']}
           style={styles.overlay}>
           
-          <View
+          <Animated.View
             style={[
               styles.contentContainer,
               {
@@ -284,7 +284,7 @@ const LandingScreen = ({navigation}) => {
                 />
               ))}
             </View>
-          </View>
+          </Animated.View>
         </LinearGradient>
       </ImageBackground>
     </View>

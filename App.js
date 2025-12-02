@@ -8,6 +8,7 @@ import SplashScreen from './src/screens/SplashScreen';
 import LandingScreen from './src/screens/LandingScreen';
 import AuthScreen from './src/screens/AuthScreen';
 import OTPScreen from './src/screens/OTPScreen';
+import EmailVerificationScreen from './src/screens/EmailVerificationScreen';
 import PinSetupScreen from './src/screens/PinSetupScreen';
 import PermissionsScreen from './src/screens/PermissionsScreen';
 import JoinScreen from './src/screens/JoinScreen';
@@ -55,6 +56,7 @@ const App = () => {
             <Stack.Screen name="Landing" component={LandingScreen} />
             <Stack.Screen name="Auth" component={AuthScreen} />
             <Stack.Screen name="OTP" component={OTPScreen} />
+            <Stack.Screen name="EmailVerification" component={EmailVerificationScreen} />
             <Stack.Screen name="PinSetup" component={PinSetupScreen} />
             <Stack.Screen name="Permissions" component={PermissionsScreen} />
           </>
